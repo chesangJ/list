@@ -23,7 +23,7 @@ val z= mutableListOf(
 
 )
     println(z)
-
+    println(addPeople())
 
 }
 fun names(x:List<String>):List<String>{
@@ -44,6 +44,11 @@ fun age(person:List<Person>):List<Person>{
 
 }
 
+fun addPeople():List<Person>{
+    var pers1=Person("Joy",24,5.4,60)
+    var pers2=Person("Anita",54,4.4,90)
+    return mutableListOf(pers1,pers2)
+}
 
 
 
